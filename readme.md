@@ -10,7 +10,7 @@ This repository is structured to provide examples of my capabilities in multiple
   - Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis.
 
 - SQL:
-- - Queries for data manipulation and analysis, focusing on customer data and relational database management.
+  - Queries for data manipulation and analysis, focusing on customer data and relational database management.
 
 - MATLAB (To Be Added):
 
