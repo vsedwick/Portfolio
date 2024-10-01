@@ -7,4 +7,4 @@ The portfolio is organized into subfolders, each representing a different aspect
 - Data Analysis: Scripts for analyzing neurophysiological recordings and motion tracking data.
 - Visualization: Tools for extracting and visualizing data from public single-cell sequencing databases.
 - Statistical Analysis: Custom Python scripts for conducting complex statistical analyses.
-- Histology: Image processing and analysis of histological data.
+- Histology: Analyzes spot counts from in situ hybridization images
