@@ -14,9 +14,9 @@ This repository is structured to provide examples of my capabilities in multiple
 
 - #### MATLAB (To Be Added):
 
-- R (To Be Added):
+- #### R (To Be Added):
 
-- SAS (To Be Added):
+- ##### SAS (To Be Added):
 
 ### Current Folders:
 
