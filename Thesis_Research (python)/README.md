@@ -8,3 +8,7 @@ The portfolio is organized into subfolders, each representing a different aspect
 - Visualization: Tools for extracting and visualizing data from public single-cell sequencing databases.
 - Statistical Analysis: Custom Python scripts for conducting complex statistical analyses.
 - Histology: Analyzes spot counts from in situ hybridization images
+
+## Ongoing Development:
+
+These programs are actively being updated to improve readability and user experience, such as the inclusion of configuration files for better customization.
