@@ -6,13 +6,13 @@ This portfolio includes a comprehensive collection of scripts ad programs I deve
 ## Portfolio Overview:
 
 This repository is structured to provide examples of my capabilities in multiple programming environments, organized by language:
-- Thesis (Python):
-  - Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis.
+- #### Thesis (Python):
+  Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis.
 
-- SQL:
-  - Queries for data manipulation and analysis, focusing on customer data and relational database management.
+- #### SQL:
+    Queries for data manipulation and analysis, focusing on customer data and relational database management.
 
-- MATLAB (To Be Added):
+- #### MATLAB (To Be Added):
 
 - R (To Be Added):
 
