@@ -1,7 +1,7 @@
 # Victoria Sedwick Portfolio
 
 
-This portfolio includes a comprehensive collection of scripts ad programs I developed over the course of my academic career (2017-2024) as well as sample scripts to demonstrate my proficiency in a variety of programming languages and data analysis tools. Each folder contains targeted projects showcasing my expertise across different domains, including neuroscience research, statistical analysis, and general data manipulation.
+This portfolio includes a comprehensive collection of scripts ad programs I developed over the course of my academic career (2017-2024) as well as sample scripts to demonstrate my proficiency in a variety of programming languages and data analysis tools. Each folder contains targeted projects showcasing my expertise across different domains, including neuroscience research, statistical analysis, and general data manipulation. I began my journey with R, followed by MATLAB, as many open-source programs in our lab used these languages. As my projects grew in complexity, I honed in on Python for its flexibility.  I also learned SQL to explore more versatile methods of database management driven by self interest.
 
 ## Portfolio Overview:
 
