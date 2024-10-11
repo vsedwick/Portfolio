@@ -122,7 +122,7 @@ class Config_Variables:
         self.dataset_path = config['data_path']
 
         #check for gene paramter
-        if len(config['genes']) != 3:s
+        if len(config['genes']) != 3:
             raise ValueError("Must list 3 genes. This program currently does not support less or more.")
         else:
             self.gene1 = config['genes']['gene1']
