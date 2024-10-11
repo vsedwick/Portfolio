@@ -32,6 +32,7 @@ def main(variables_config):
     config = Config_Variables(load_config(variables_config))
 
         #create save_path
+    
     _ = make_folder(config.dataset, config.image_save_folder)
     save_path = make_folder(config.combo, _)
 
@@ -118,10 +119,10 @@ class Config_Variables:
             self.image_save_folder = make_folder(baby_folder, parents)
         else:
             self.image_save_folder = image_save_folder
-        self.dataset_path = config['dataset_path']
+        self.dataset_path = config['data_path']
 
         #check for gene paramter
-        if len(config['genes']) != 3:
+        if len(config['genes']) != 3:s
             raise ValueError("Must list 3 genes. This program currently does not support less or more.")
         else:
             self.gene1 = config['genes']['gene1']
@@ -131,7 +132,7 @@ class Config_Variables:
         self.combo = f'{self.gene1}-{self.gene2}-{self.gene3}'
 
         #Brain region, will be used for labeling purposes
-        self.region = config['venn_settings']['region']
+        self.region = config['Region_specificity']['region']
 
         colors = config['venn_settings']['colors']
         if len(colors) != 3 or not isinstance(colors, (list, tuple)):
@@ -356,7 +357,7 @@ def colocalizations(df, region, file_save, config):
             plt.savefig(f'{file_save}.{fmt}')
         plt.close()
 
-def make_folder(parent_directory, new_folder):
+def make_folder(new_folder, parent_directory):
     """
     Creates new folders and or sets the directory. 
 
