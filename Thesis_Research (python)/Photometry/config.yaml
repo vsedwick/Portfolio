@@ -1,0 +1,82 @@
+#Please input the appropriate information for each parameter unless marked as optional.
+#Ensure that your data files (i.e. photometry trace and behavior file) are placed in their own folders, 
+#appropriately labeled with no spaces or symbols.
+
+Directory_Information:
+  #Parent folder where your data folders are located (It is highly suggested to separate by groups)
+  project_home: E:\VS-Jade_Mated_odor_photometry\scaled_trace\Mated Females 
+  #Provide an example behavior file that is representative of those in your data folders. It is important that it includes the relavent behaviors.
+  example_behavior_file: E:\Photometry-Fall2022\Final Analysis\REANALYSIS_zscore_nolimit\V. Males Inf\Pups\45\Raw data-Pup Exposure 2nd set-Trial    38 (2).xlsx
+
+Acquisition_Information: 
+  behaviorvideo_fps: 30
+  photometry_fps: 20
+  #How many seconds do you want to analyze for peri-events?
+  peri-baseline_seconds: 5
+  peri-event_seconds: 10
+
+  #What signal ROI is being analyzed (e.g. 0-9 based on column order. If column is Region0G input 0)
+  roi: 0
+  #Adjust alignment (if uncertain, keep at 0)
+  offset: 0
+  #Use a full trace ('yes') or crop around your start parameters ('no')?
+  full_trace: no
+  #If full trace is 'yes', would you like a minor crop? If no, input 0.
+  crop_end: 0
+  crop_front: 0
+  #If full trace is 'no', how much time would you like to pad around your start parameters? If not applicable, leave blank.
+  #If selected time is more than what is available, the program will use the maximum value possible.
+  time_from_start_s: 120
+  time_from_end_s: 120
+
+Behavior_Parameters:
+  #In the file containing the behavior scores, what row contains your behavior names? 
+  #(If the row is not consistent or incorrect, you will be prompted during analysis to provide a new row number)
+  behavior_row: 35
+  start_parameter: start
+  #what is the minimal accepted duration? If not applicable, input 0?
+  minimum_accepted_duration_s: 0.1
+  #Is a control trial included in your traces? If yes, ensure you have a minimum of 4 start markers, otherwise
+  #the control and trial portion will be analyzed together.
+  use_control_trial: yes
+  #Would you like to limit how many peri-events are extracted per behavior (e.g. if 5, the most prominient 5 'sniffing', 'grooming' etc events will be extracted)? 
+  #Useful to prevent oversampling. If no, input 0.
+  limit_perievent_extraction: 0
+  
+  #Define point events if there are any.
+  point_events:
+    - start
+    - Approach
+    - bite
+
+
+  Compile_behaviors: yes
+  Behavior_Groupings:
+  #Ensure these are spelled correctly
+    stimulus_interaction_behaviors: 
+      - Sniffing
+      - Grooming
+      - Aggressive groom
+      - Attack
+      - 
+      - 
+      - 
+    stimulus_contact_behaviors:
+      - Grooming
+      - Nudge
+      - 
+      - 
+    non_stimulus_interaction:
+      - Rearing
+      - Digging
+
+    #Feel free to add custom groupings. Rename and follow the same format.
+    <custom1>:
+      - 
+    <custom2>:
+      - 
+  Add_a_zone: no
+  Zone: In nest
+
+
+
