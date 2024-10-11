@@ -2,7 +2,7 @@
 
 # Dataset and file paths
 dataset: 'STR_dataset'
-file_path: "E:\\SingleCell_AllenAtlas\\STR_Region_Expression.csv"
+data_path: "E:\\SingleCell_AllenAtlas\\STR_Region_Expression.csv"
 image_save_folder: "E:\\SingleCell_AllenAtlas\\venndiagram_drafts_VS\\Images"
 
 # Genes of interest
@@ -11,8 +11,10 @@ genes:
   gene2: 'Slc32a1'
   gene3: 'Pgr'
 
+Region_specificity:
+  region: MeP
+  clarifiers: 
 # Venn diagram parameters
 venn_settings:
-  region: 'MeP'
   colors: ['#ff0000', '#00ff00', '#0000ff'] # Red, Green, Blue
   save_formats: ['png', 'svg']
