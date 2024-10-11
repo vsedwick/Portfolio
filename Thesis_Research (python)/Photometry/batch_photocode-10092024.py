@@ -297,7 +297,10 @@ class Clean_and_ProcessFiles:
 class SmoothNPlot:
     def __init__(self, config, photo_470, photo_410):
         self.photo_470 = self.photo_470
-        self.photo_410
+        self.photo_410 = self.photo_410
+        self.config = config
+    def 
+       
 def load_config(variables_config):
     """ 
     Loads the configuration file. can be specified as an argument or defined in the script.
