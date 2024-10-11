@@ -7,6 +7,7 @@ descriptive docstrings. The goal is to publish this collection as an open source
 
 The benefit to this program is that peri-event extraction is automatic significantly reducing user-bias and ensuring uniformity and organization across samples. Additionally, it is capable of batch processing any number of recording trials with minimal, prompted supervision, and pools relevant data from all of the samples into a single csv file.
 
+## Description of Program
 ### Photocode scripts
 The photocode scripts perform the bulk of the data cleaning and data extraction. "batch_photocode-10092024.py" is the most recent version and is still in the process of being updated whereas combined-photocode-05052024.py and other variations are the versions I worked on and utilized upwards of 5 years in my lab. All extractions are nestled neatly into a folder called "Behaviors" and are organized by the peri-event they belong to. Approximately 8 parameters are extracted per sample, per event.
 
