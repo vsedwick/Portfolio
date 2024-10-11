@@ -1,6 +1,3 @@
-# AUTHOR: VICTORIA SEDWICKts
-# ADAPTED FROM NEUROfpMETRICS AND ILARIA CARTA (MATLAB)
-
 # https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html
 # https://stacbehav_filesoverflow.com/questions/11190735/python-matplotlib-superimpose-scatter-plots
 
