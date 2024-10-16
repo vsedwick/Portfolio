@@ -9,7 +9,7 @@ The benefit to this program is that peri-event extraction is automatic significa
 
 ## Description of Program
 ### Photocode scripts
-The photocode scripts perform the bulk of the data cleaning and data extraction. "batch_photocode-10092024.py" is the most recent version and is still in the process of being updated whereas "combined-photocode-05052024.py" and other variations are the versions I worked on and utilized upwards of 5 years in my lab. All extractions are nestled neatly into a folder called "Behaviors" and are organized by the peri-event they belong to. Approximately 8 parameters are extracted per sample, per event. These values can be accessed or re-analyzed at anytime without having to re-run this 'photocode'.
+The photocode scripts perform the bulk of the data cleaning and data extraction. **"batch_photocode-10092024.py"** is the most recent version and is still in the process of being updated whereas "combined-photocode-05052024.py" and other variations are the versions I worked on and utilized upwards of 5 years in my lab. All extractions are nestled neatly into a folder called "Behaviors" and are organized by the peri-event they belong to. Approximately 8 parameters are extracted per sample, per event. These values can be accessed or re-analyzed at anytime without having to re-run this 'photocode'.
 
 ### Summary Scripts
 The summary script (summary_values-05042024.py) processes all extracted peri-event parameters from the "Behavior" folder and calculates relevant metrics for each one. These metrics are saved as individual CSV files, categorized by the type of calculation performed (e.g., Δ area under the curve, magnitude change, z-score, etc.). Each CSV includes the sample ID and the calculated value for each observed event. Additionally, averaged z-score plots with shaded standard error of the mean (SEM) are generated for each event, providing an immediate visualization of the overall signal response.
@@ -19,6 +19,9 @@ The summary script (summary_values-05042024.py) processes all extracted peri-eve
 ### Visualization Scripts
 
 ## Instructions
+- To run the batch_photocode, the compatible data can be found on Google Drive:
+https://drive.google.com/drive/folders/1JRW4vdPXH9-fDm-3SlwxG2M2b4yX3qcl?usp=sharing
 
+- Set the base folder as the project directory. Choose one of the samples to use as the example behavior file.
 
 
