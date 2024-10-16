@@ -24,4 +24,4 @@ https://drive.google.com/drive/folders/1JRW4vdPXH9-fDm-3SlwxG2M2b4yX3qcl?usp=sha
 
 - Set the base folder as the project directory in the configuration file ("config.yaml"). Choose one of the samples to use as the example behavior file.
 
--After running the photocode, "summary_values_05052024.py" will perform a series of calculations to output plottable values into csv sheets.
+- After running the photocode, "summary_values_05052024.py" will perform a series of calculations to output plottable values into csv sheets. [This script is currently compatible with the config file, but it will be soon.
