@@ -4,9 +4,9 @@
 
 Directory_Information:
   #Parent folder where your data folders are located (It is highly suggested to separate by groups)
-  project_home: E:\VS-Jade_Mated_odor_photometry\scaled_trace\Mated Females 
+  project_home: "E:/Photometry-Fall2022/New_code_tester/V. Males Non-Attacking"
   #Provide an example behavior file that is representative of those in your data folders. It is important that it includes the relavent behaviors.
-  example_behavior_file: E:\Photometry-Fall2022\Final Analysis\REANALYSIS_zscore_nolimit\V. Males Inf\Pups\45\Raw data-Pup Exposure 2nd set-Trial    38 (2).xlsx
+  example_behavior_file: "E:/Photometry-Fall2022/New_code_tester/V. Males Non-Attacking/27/Raw data-Pup Block 2-Trial     3 (2).xlsx"
 
 Acquisition_Information: 
   behaviorvideo_fps: 30
@@ -14,6 +14,8 @@ Acquisition_Information:
   #How many seconds do you want to analyze for peri-events?
   peri-baseline_seconds: 5
   peri-event_seconds: 10
+
+  silent_mode: off
 
   #What signal ROI is being analyzed (e.g. 0-9 based on column order. If column is Region0G input 0)
   roi: 0
