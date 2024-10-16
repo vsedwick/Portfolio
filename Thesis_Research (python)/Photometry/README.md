@@ -22,6 +22,6 @@ The summary script (summary_values-05042024.py) processes all extracted peri-eve
 - To run the batch_photocode, the compatible data can be found on Google Drive:
 https://drive.google.com/drive/folders/1JRW4vdPXH9-fDm-3SlwxG2M2b4yX3qcl?usp=sharing
 
-- Set the base folder as the project directory. Choose one of the samples to use as the example behavior file.
+- Set the base folder as the project directory in the configuration file ("config.yaml"). Choose one of the samples to use as the example behavior file.
 
 
