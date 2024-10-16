@@ -15,14 +15,14 @@ The photocode scripts perform the bulk of the data cleaning and data extraction.
 The summary script (summary_values_05042024.py) processes all extracted peri-event parameters from the "Behavior" folder and calculates relevant metrics for each one. These metrics are saved as individual CSV files, categorized by the type of calculation performed (e.g., Δ area under the curve, magnitude change, z-score, etc.). Each CSV includes the sample ID and the calculated value for each observed event. Additionally, averaged z-score plots with shaded standard error of the mean (SEM) are generated for each event, providing an immediate visualization of the overall signal response.
 
 ### Statistical Scripts
-"VS_Photo_LMM_betweengroups_BATCH.py"
+- VS_Photo_LMM_betweengroups_BATCH.py
 
 ### Visualization Scripts
-"zscoreFigures_andBins_change colors.py"
-"pretty_picture_03253034.py"
+- zscoreFigures_andBins_change colors.py
+- pretty_picture_03253034.py
 
 ### Utility Scripts
-"Compile_wID.py
+- Compile_wID.py
 
 ## Instructions
 - To run the batch_photocode, the compatible data can be found on Google Drive:
