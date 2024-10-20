@@ -7,7 +7,7 @@ This portfolio includes a comprehensive collection of scripts ad programs I deve
 
 This repository is structured to provide examples of my capabilities in multiple programming environments, organized by language:
 - #### Thesis (Python):
-  Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis.
+  Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis. These scripts handle various tasks such as data extraction, transformation, and loading, statistical analysis, and visualization, related to my research on behavioral neuroscience.
 
 - #### SQL:
     Queries for data manipulation and analysis, focusing on customer data and relational database management.
@@ -20,7 +20,7 @@ This repository is structured to provide examples of my capabilities in multiple
 
 ### Current Folders:
 
-- Thesis Folder: Contains the complete set of Python scripts developed during my PhD. These scripts handle various tasks such as data extraction, statistical analysis, and visualization, related to my research on behavioral neuroscience.
+- Thesis Folder: 
 
 - SQL Folder: Contains a set of queries designed to work with customer data, demonstrating my ability to manage and manipulate relational datasets. The queries range from basic data aggregation to more complex analysis using window functions and conditional logic.
 
