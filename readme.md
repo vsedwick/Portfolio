@@ -10,7 +10,7 @@ This repository is structured to provide examples of my capabilities in multiple
     Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, and statistical analysis. These scripts handle various tasks such as data extraction,     transformation, and loading, statistical analysis, and visualization, related to my research on behavioral neuroscience.
 
 - #### SQL:
-Contains a set of queries designed to work with customer data, demonstrating my ability to manage and manipulate relational datasets. The queries range from basic data aggregation to more complex analysis using window functions and conditional logic.
+    Contains a set of queries designed to work with customer data, demonstrating my ability to manage and manipulate relational datasets. The queries range from basic data aggregation to more complex analysis using window functions and conditional logic.
 
 - #### MATLAB (To Be Added):
 
