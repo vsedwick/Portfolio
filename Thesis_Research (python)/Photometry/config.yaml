@@ -4,9 +4,7 @@
 
 Directory_Information:
   #Parent folder where your data folders are located (It is highly suggested to separate by groups)
-  project_home: "E:/Photometry-Fall2022/New_code_tester/V. Males Non-Attacking"
-  #Provide an example behavior file that is representative of those in your data folders. It is important that it includes the relavent behaviors.
-  example_behavior_file: "E:/Photometry-Fall2022/New_code_tester/V. Males Non-Attacking/27/Raw data-Pup Block 2-Trial     3 (2).xlsx"
+  project_home: C:/Users/sedwi/Desktop/New_code_tester/V. Males Non-Attacking
 
 Acquisition_Information: 
   behaviorvideo_fps: 30
@@ -29,7 +27,7 @@ Acquisition_Information:
   #If full trace is 'no', how much time would you like to pad around your start parameters? If not applicable, leave blank.
   #If selected time is more than what is available, the program will use the maximum value possible.
   time_from_start_s: 120
-  time_from_end_s: 120
+  time_from_end_s: 30
 
 Behavior_Parameters:
   #In the file containing the behavior scores, what row contains your behavior names? 
@@ -40,7 +38,7 @@ Behavior_Parameters:
   minimum_accepted_duration_s: 0.1
   #Is a control trial included in your traces? If yes, ensure you have a minimum of 4 start markers, otherwise
   #the control and trial portion will be analyzed together.
-  use_control_trial: yes
+  use_control_trial: no
   #Would you like to limit how many peri-events are extracted per behavior (e.g. if 5, the most prominient 5 'sniffing', 'grooming' etc events will be extracted)? 
   #Useful to prevent oversampling. If no, input 0.
   limit_perievent_extraction: 0
@@ -49,13 +47,22 @@ Behavior_Parameters:
   point_events:
     - start
     - Approach
-    - bite
+    - Bite
 
+  Behaviors_to_Score: 
+    - Carrying
+    - Attack
+    - Aggressive groom
+    - Rearing
+    - Digging
+    - Grooming
+    - Sniff
+    - Approach
 
   Compile_behaviors: yes
   Behavior_Groupings:
   #Ensure these are spelled correctly
-    stimulus_interaction_behaviors: 
+    "Stimulus Interaction": 
       - Sniffing
       - Grooming
       - Aggressive groom
@@ -63,12 +70,12 @@ Behavior_Parameters:
       - 
       - 
       - 
-    stimulus_contact_behaviors:
+    "Stimulus Contact":
       - Grooming
       - Nudge
       - 
       - 
-    non_stimulus_interaction:
+    "Non-Stimulus Behaviors":
       - Rearing
       - Digging
 
