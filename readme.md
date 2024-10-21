@@ -8,7 +8,7 @@ This portfolio includes a comprehensive collection of scripts ad programs I deve
 This repository is structured to provide examples of my capabilities in multiple programming environments, organized by language:
 - #### [Thesis (Python)](https://github.com/vsedwick/Portfolio/tree/master/Thesis_Research%20(python)) :
     Scripts and tools developed during my PhD, including data analysis for neurophysiological recordings, image processing, animal tracking and other projects related to behavioral neuroscience. These scripts handle various tasks such as data extraction, transformation, and loading, statistical analysis, and visualization.
-- #### SQL:
+- #### [SQL](https://github.com/vsedwick/Portfolio/tree/master/SQL):
     Contains a set of queries designed to work with customer data, demonstrating my ability to manage and manipulate relational datasets. The queries range from basic data aggregation to more complex analysis using window functions and conditional logic.
 
 - #### MATLAB (To Be Added):
