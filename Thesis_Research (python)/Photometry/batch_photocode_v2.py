@@ -107,7 +107,10 @@ class AnalysisParameters:
 
         self.events_to_score = [i for i in config['Behavior_Parameters']['Behaviors_to_Score'] if i is not None]
 
-        print("Events to Score: ", self.events_to_score)
+        if len(self.event_to_score) != 0:
+            print("Events to Score: ", self.events_to_score)
+        else:
+            self.events_to_score = None
         self.compile_behavior = self._validate_boolean(config['Behavior_Parameters']['Compile_behaviors'], 'Behavior_Parameters: Compile_behaviors')
         if not self.compile_behavior:
             self.Groups = None
@@ -694,10 +697,15 @@ class Restructure_Behavior_Data:
         self.trial_id = config.trial_id
 
     def create_dictionary(self):
-        for event in self.events_to_extract:
-            if event in self.config.events_to_score:
+        if self.events_to_score is None:
+            for event in self.events_to_extract:
                 bool_array = np.array(self.behav_raw[event], dtype = bool)
                 self.event_dictionary.update({f"{event}": bool_array})
+        else:
+            for event in self.events_to_extract:
+                if event in self.config.events_to_score:
+                    bool_array = np.array(self.behav_raw[event], dtype = bool)
+                    self.event_dictionary.update({f"{event}": bool_array})
 
         return self.event_dictionary
     
