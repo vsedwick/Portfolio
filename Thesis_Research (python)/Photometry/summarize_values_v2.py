@@ -1,3 +1,4 @@
+
 configuration_file = r'C:\Users\sedwi\Desktop\Portfolio\Thesis_Research (python)\Photometry\config.yaml'
 
 from batch_photocode_v2 import make_folder, load_config, AnalysisParameters
@@ -55,7 +56,7 @@ class EmptyDictionaries:
     def load_full_dict(self, dicts, key, value, ids):
 
         base, event = value
-        if "Avg" in dicts["title"].lower(): #check if exists
+        if "Indv" not in dicts["title"].lower(): #check if exists
             dicts[f"Animal ID_{key}"] = list(dict.fromkeys(ids))
         else:
             dicts[f"Animal ID_{key}"] = ids
@@ -66,7 +67,7 @@ class EmptyDictionaries:
     
     def load_dict_diffs(self, dicts, key, value, ids):
 
-        if "Indv" in dicts["title"].lower(): #check if exists
+        if "Indv" not in dicts["title"].lower(): #check if exists
             dicts[f"Animal ID_{key}"] = list(dict.fromkeys(ids))
         else:
             dicts[f"Animal ID_{key}"] = ids
