@@ -1,0 +1,29 @@
+rootdir: "E:/Exc Dreadds_2022/dreadds/OF/SAL/Virgin Female"
+example_behavior_file_h5: "E:/Exc Dreadds_2022/dreadds/OF/CNO/Males/VM14_2023-03-27-222442-0000DLC_resnet50_NOR_OpenfieldJan25shuffle1_50000_filtered.h5"
+project_name: Saline1_female
+#How are you scoring? single: only scores and analyzes the example_behav_file; batch/multipl: analyzes an entire folder
+scoretype: batch
+calibration_mode: on
+
+
+Video Parameters:
+  real_sizecm: 65
+  #Frames per Second
+  fps: 30
+  #How much time in each video do you wish to analyze?
+  length_s: 300
+
+Arena_parameters:
+  movement_correction_factor: 0.58
+  scale_for_center_zone: 0.28
+  #What is the likelihood cutoff?
+  plikelihood: 0.9
+
+  save_tracklets: yes
+  #What markers should appear to determine the start of the trial (e.g. presence of 'nose' suggests mouse entered the arena)
+  bodyparts_to_determine_trial_start:
+  - nose
+  - Neck
+  - Neck
+  bodyparts_to_analyze:
+  - Neck

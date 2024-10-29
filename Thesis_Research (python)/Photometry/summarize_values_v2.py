@@ -293,6 +293,7 @@ def main(configuration_file):
             # print(dictionaries.raw_diary_avg)
             save_dictionaries(dictionaries, stage, save_directory, trace)
     print("Summarization Complete.")
+    
 if __name__ == "__main__": 
     if len(sys.argv) > 1:
         main(sys.argv[1])
