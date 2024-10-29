@@ -107,7 +107,7 @@ class AnalysisParameters:
 
         self.events_to_score = [i for i in config['Behavior_Parameters']['Behaviors_to_Score'] if i is not None]
 
-        if len(self.event_to_score) != 0:
+        if len(self.events_to_score) != 0:
             print("Events to Score: ", self.events_to_score)
         else:
             self.events_to_score = None
@@ -695,6 +695,7 @@ class Restructure_Behavior_Data:
         self.add_zone = config.add_zone
         self.Groups = config.Groups
         self.trial_id = config.trial_id
+        self.events_to_score = config.events_to_score
 
     def create_dictionary(self):
         if self.events_to_score is None:
@@ -703,7 +704,7 @@ class Restructure_Behavior_Data:
                 self.event_dictionary.update({f"{event}": bool_array})
         else:
             for event in self.events_to_extract:
-                if event in self.config.events_to_score:
+                if event in self.events_to_score:
                     bool_array = np.array(self.behav_raw[event], dtype = bool)
                     self.event_dictionary.update({f"{event}": bool_array})
 
@@ -970,8 +971,9 @@ class ExtractbyEvent:
                 if self.photo_start <= roi <=self.photo_end:
                     postevent = int(roi + self.config.post_s * self.config.photo_fps)
                     preevent = int(roi - self.config.pre_s * self.config.photo_fps)
-                    plt.axvspan(self.photo_time[roi], self.photo_time[postevent], color = 'coral', alpha = 0.5, ymax = 0.6)
-                    plt.axvspan(self.photo_time[roi], self.photo_time[preevent], color = 'aquamarine', alpha = 0.5, ymax = 0.6)
+                    if postevent < self.photo_end:
+                        plt.axvspan(self.photo_time[roi], self.photo_time[postevent], color = 'coral', alpha = 0.5, ymax = 0.6)
+                        plt.axvspan(self.photo_time[roi], self.photo_time[preevent], color = 'aquamarine', alpha = 0.5, ymax = 0.6)
             for s, e in zip(restructured_frame_onset, frame_end):
                 try:
                     plt.axvspan(self.photo_time[s], self.photo_time[e], color = 'midnightblue', ymax = 0.1)
@@ -1123,6 +1125,7 @@ def main(configuration_file):
                         if trace == list(trace_diary.keys())[0]:
                             extraction.rep_plot_overlap()
 
+    print(f"Extraction complete. Peri-events can be found in the {event_save_path} folder")
 
 if __name__ == "__main__": 
     if len(sys.argv) > 1:
